@@ -59,7 +59,7 @@ const Customizer = () => {
 			setGeneratingImg(true);
 			
 			//backend call to generate an ai image
-			const response = await fetch('https://psca.onrender.com', {
+			const response = await fetch('https://psca.onrender.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
